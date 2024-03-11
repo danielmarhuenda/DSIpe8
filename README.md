@@ -59,7 +59,10 @@ Son iguales:
 En este test miro si se añadió bien información al suscriptor mediante update, y al hacer el test aparece que no, pero en el propio mensaje de error se ve el mismo contenido dos veces.  
 
 Probé a hacer otro test, pero de la clase noticias, para comprobar si era sólo un error de la clase suscriptor y ocurrió lo mismo, así que no. Aquí probé a añadir un suscriptor dummy a la lista de suscriptores del noticiero:  
-``` AssertionError: expected [ Suscriptor{ info_recibida: [] } ] to equal [ Suscriptor{ info_recibida: [] } ] ```
+``` AssertionError: expected [ Suscriptor{ info_recibida: [] } ] to equal [ Suscriptor{ info_recibida: [] } ] ```  
 
 Lo mismo con el unsuscribe: 
-``` AssertionError: expected [] to equal [] ```
+``` AssertionError: expected [] to equal [] ```  
+
+Aunque no conseguí que funcionara hice el resto de test para el coverage.  
+
