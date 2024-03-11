@@ -25,4 +25,18 @@ describe("Prueba suscribe", () => {
 
 });
 
+describe("Prueba Publicar y notify", () => {
+    
+    it("Se publicó bien", () => {
+        noticiero.subscribe(suscriptor);
+        noticiero.Publicar("Noticia");
+
+        expect(suscriptor.GetInfo()[0]).to.equal({ Revista: "Revista", Info: "Noticia" });
+
+    });
+
+
+
+});
+
 
