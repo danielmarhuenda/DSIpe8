@@ -49,6 +49,12 @@ export class Suscriptor{
 
 Tuve problemas a la hora de hacer tests, dice que dos cosas iguales son distintas:  
 ```AssertionError: expected { Revista: 'Revista', Info: 'Noticia' } to equal { Revista: 'Revista', Info: 'Noticia' }```  
+Son iguales: 
+
+```
+{ Revista: 'Revista', Info: 'Noticia' }
+{ Revista: 'Revista', Info: 'Noticia' }
+```
 
 En este test miro si se añadió bien información al suscriptor mediante update, y al hacer el test aparece que no, pero en el propio mensaje de error se ve el mismo contenido dos veces.  
 
